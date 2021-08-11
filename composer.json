@@ -1,0 +1,16 @@
+{
+    "name": "mf6/p6",
+    "authors": [
+        {
+            "name": "muhammadfallahi",
+            "email": "muhammadfallahi6@gmail.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4":{
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
