@@ -14,6 +14,10 @@ $app = new Application(dirname(__DIR__)); //root address;
  $app->router->post('/login', [Authcontroller::class, 'login']);
  $app->router->get('/register', [Authcontroller::class,'register']);
  $app->router->post('/register', [Authcontroller::class,'register']);
+ $app->router->get('/upload', [SiteController::class,'upload']);
+ $app->router->get('/dashbord', [SiteController::class,'dashbord']);
+
+
 
 
 

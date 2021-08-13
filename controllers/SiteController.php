@@ -20,6 +20,18 @@ class SiteController extends Controller{
         return $this->render('contact');
     }
 
+    
+    public function upload(){
+
+        return $this->render('upload');
+    }
+
+    
+    public function dashbord(){
+
+        return $this->render('dashbord');
+    }
+
     public static function handlecontact(Request $request){
 
         $body = $request->getbody();
