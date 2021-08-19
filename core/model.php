@@ -9,6 +9,10 @@ abstract class Model {
     public const RULE_MIN = 'min';
     public const RULE_MAX = 'max';
     public const RULE_MATCH = 'match';
+    public array $errors = [];
+
+    
+    abstract public function rules(): array;
 
 
     public function loadData($data){
@@ -18,11 +22,7 @@ abstract class Model {
              $this->{$key} = $value;
             }
         }
-    }
-
-    abstract public function rules(): array;
-    
-    public array $errors = [];
+    }    
      
     public function validation(){
 
