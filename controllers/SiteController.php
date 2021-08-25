@@ -10,7 +10,7 @@ class SiteController extends Controller{
     public function home(){
 
         $params = [
-            'name' => "TheCodeholic"
+            'name' => "This is home"
         ];
         return $this->render('home', $params);
     }
